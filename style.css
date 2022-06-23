@@ -131,6 +131,34 @@ li a {
   margin-top: 1.5em;
 }
 
+.products-row {
+  display: flex;
+  flex-direction: row;
+  min-height: 400px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+figure {
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  height: 300px;
+  width: 300px;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .products-row {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 720px) {
   .container {
