@@ -110,6 +110,28 @@ li a {
   text-transform: uppercase;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  background-color: #fff;
+}
+
+.wrapper-middle {
+  color: #000;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+
+.wrapper-middle h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+
 @media screen and (max-width: 720px) {
   .container {
     flex-direction: column;
