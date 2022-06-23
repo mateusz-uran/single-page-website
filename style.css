@@ -2,6 +2,27 @@ body {
   background-color: #000;
 }
 
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("hero-background.jpg");
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.4;
+}
+
+header {
+  position: relative;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
