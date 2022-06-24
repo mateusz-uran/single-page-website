@@ -1,9 +1,6 @@
-body {
-  background-color: #000;
-}
-
 .hero {
   position: relative;
+  background-color: #000;
 }
 
 .hero::before {
@@ -342,6 +339,7 @@ figure img {
   width: 100%;
   background-color: #e2e2e2;
   display: inline-block;
+  overflow: hidden;
 }
 
 #projects .wrapper-projects{
@@ -392,6 +390,7 @@ figure img {
   width: 32.5%;
   width: calc(33.33% - 1%);
   margin: 1% 1% 0 0px;
+  height: 350px;
 }
 
 #projects .sliders-projects li:nth-child(3n){
@@ -403,6 +402,7 @@ figure img {
 #projects .proj-img {
   width: 100%;
   object-fit: cover;
+  height: 360px;
 }
 
 #projects .hover {
@@ -430,7 +430,7 @@ figure img {
   position: absolute;
   bottom: 0;
   top: 0;
-  background-color: #777777;
+  background-color: #ffee02;
   padding: 10px 15px;
 }
 
@@ -447,6 +447,8 @@ figure img {
   background-color: #ffee02;
   display: inline-block;
   padding: 80px 0;
+  border-top: 2px solid #777777;
+  margin-top: 20px;
 }
 
 #contact .wrapper-contact {
@@ -464,6 +466,7 @@ figure img {
 #contact .contact-half h2 {
   padding: 0 0 30px;
   text-align: left;
+  font-size: 35px;
 }
 
 #contact .phone-wrapper {
@@ -478,7 +481,8 @@ figure img {
 
 #contact .phone-wrapper span {
   display: inline-block;
-  width: 115px;
+  width: 125px;
+  font-size: 15px;
 }
 
 #contact .phone-wrapper a {
@@ -499,7 +503,8 @@ figure img {
 
 #contact .mail-wrapper span {
   display: inline-block;
-  width: 115px;
+  width: 125px;
+  font-size: 15px;
 }
 
 #contact .mail-wrapper a {
@@ -516,9 +521,74 @@ figure img {
   line-height: 1.5;
   padding: 0 0 0 40px;
   margin: 0 0 20px;
-}-
+}
 
+#contact .contact-form {
+  display: block;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
 
+#contact .contact-form input, 
+#contact .contact-form textarea {
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 15px;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+#contact .contact-form .submit {
+  background-color: #e2e2e2;
+  border: 1px solid #000;
+  border-radius: 15px;
+  color: #002146;
+  cursor: pointer;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+#author {
+  display: inline-block;
+  padding: 20px 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+#author .author-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: block;
+  padding: 0 40px;
+  text-align: center;
+}
+
+#author .copyright {
+  display: block;
+  float: left;
+  padding: 10px 0;
+}
+
+#author .author-social {
+  float: right;
+  padding: 10px 0;
+}
+
+#author .author-social a {
+  text-decoration: none;
+  color: #ffee02;
+}
 
 @media screen and (max-width: 1300px) {
   .content {
@@ -531,6 +601,11 @@ figure img {
     padding: 10px 10px;
     font-size: 13px;
   }
+
+  #contact .wrapper-contact {
+    padding: 0 40px;
+  }
+  
 }
 
 @media screen and (max-width: 1024px) {
@@ -553,10 +628,6 @@ figure img {
 
   .half {
     width: 100%;
-  }
-
-  #projects .hover-wrapper {
-    height: 50px;
   }
 }
 
@@ -588,6 +659,24 @@ figure img {
     padding: 8px 8px;
     font-size: 13px;
   }
+
+  #contact {
+  }
+
+  #contact .contact-half {
+    display: block;
+    float: none;
+    width: auto;
+    padding: 0 20px;
+  }
+
+  #author .copyright {
+    float: none;
+  }
+
+  #author .author-social {
+    float: none;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -616,6 +705,13 @@ figure img {
 
   .nav-toggle {
     display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #projects .slid-info-test {
+    padding: 10px 10px;
+    font-size: 12px;
   }
 }
 
