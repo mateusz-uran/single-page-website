@@ -57,7 +57,9 @@ if (intFrameWidth < 720) {
 window.addEventListener("resize", () => {
   if (document.body.clientWidth < 720) {
     header.classList.add("bng-color");
-  } else { header.classList.remove("bng-color"); }
+  } else { 
+    header.classList.remove("bng-color"); 
+  }
 });
 
 window.onscroll = () => {
