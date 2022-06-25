@@ -355,7 +355,7 @@ figure img {
 }
 
 .modal img {
-  width: 50%;
+  width: 80%;
   object-fit: cover;
 }
 
@@ -551,7 +551,7 @@ figure img {
 
 #contact .phone-wrapper span {
   display: inline-block;
-  width: 125px;
+  width: 55px;
   font-size: 15px;
 }
 
@@ -573,7 +573,7 @@ figure img {
 
 #contact .mail-wrapper span {
   display: inline-block;
-  width: 125px;
+  width: 55px;
   font-size: 15px;
 }
 
@@ -796,12 +796,33 @@ figure img {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
+  #contact span {
+    font-size: 12px;
+  }
+
   #contact .address-wrapper {
     font-size: 14px;
   }
 
-  #contact span , #contact a{
+  #contact a {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 297px) {
+  #contact .mail-wrapper {
+    padding: 0 0 0 50px;
+    background-size: 25%;
+  }
+
+  #contact .phone-wrapper {
+    padding: 0 0 0 50px;
+    background-size: 25%;
+  }
+
+  #contact .address-wrapper {
+    padding: 0 0 0 50px;
+    background-size: 25%;
   }
 }
