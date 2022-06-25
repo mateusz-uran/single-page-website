@@ -749,3 +749,13 @@ figure img {
     width: -webkit-calc(100%);
   }
 }
+
+@media screen and (max-width: 375px) {
+  #contact .address-wrapper {
+    font-size: 14px;
+  }
+
+  #contact span , #contact a{
+    font-size: 14px;
+  }
+}
