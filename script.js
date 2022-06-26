@@ -97,3 +97,47 @@ let imgModal = (src) => {
     };
 modal.append(newImage, closeBtn);
 };
+
+//Contact
+function contact(){
+  var name = $('#contact-name').val(),
+      email = $('#contact-email').val(),
+message = $('#contact-message').val(),
+invalid = false;
+
+$('#contact-invalid').addClass('hidden');
+$('#contact-success').addClass('hidden');
+
+message === '' ? invalid = true:'';
+name === '' ? invalid = true:'';
+          console.log(invalid);
+if (invalid){
+    $('#contact-invalid').removeClass('hidden');
+}
+else{
+          $.post('mail.php', {
+                  name: name,
+                  email: email,
+                  message: message}, function(data){
+  data = $.trim(data);
+  
+  if (data === 'false'){
+      $('#contact-error').removeClass('hidden');
+  }
+  else{
+      $('#contact-success').removeClass('hidden');
+                  $('#contact-name').val('');
+                  $('#contact-email').val('');
+                  $('#contact-message').val('');
+      
+      setTimeout(function(){
+    $('#contact-success').addClass('hidden');
+      }, 5000);
+  }
+    }).fail(function(data){
+              console.log(data);
+    });
+      }
+return false;
+      
+};
