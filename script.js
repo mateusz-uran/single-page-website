@@ -102,7 +102,6 @@ modal.append(newImage, closeBtn);
 //clear form
 btn.addEventListener('click', function handleClick(event) {
   // 👇️ if you are submitting a form
-  event.preventDefault();
   const inputs = document.querySelectorAll('#name, #email, #message');
   inputs.forEach(input => {
     input.value = '';
