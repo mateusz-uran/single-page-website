@@ -355,7 +355,7 @@ figure img {
 }
 
 .modal img {
-  width: 80%;
+  width: 50%;
   object-fit: cover;
 }
 
@@ -698,6 +698,11 @@ figure img {
 
   .half {
     width: 100%;
+  }
+
+  .modal img {
+    width: 80%;
+    object-fit: cover;
   }
 }
 
