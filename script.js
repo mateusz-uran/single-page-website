@@ -4,7 +4,6 @@ const navIcon = document.querySelectorAll('.nav-icon');
 const hamburger = document.querySelector('#hamburger');
 const link = document.querySelectorAll('.linkNav');
 const header = document.querySelector('header');
-const btn = document.getElementById('btn');
 
 navToggle.addEventListener("click", () => {
   nav.classList.toggle('open');
@@ -98,12 +97,3 @@ let imgModal = (src) => {
     };
 modal.append(newImage, closeBtn);
 };
-
-//clear form
-btn.addEventListener('click', function handleClick(event) {
-  // 👇️ if you are submitting a form
-  const inputs = document.querySelectorAll('#name, #email, #message');
-  inputs.forEach(input => {
-    input.value = '';
-  });
-});
