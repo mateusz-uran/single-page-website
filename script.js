@@ -115,27 +115,26 @@ if (invalid){
     $('#contact-invalid').removeClass('hidden');
 }
 else{
-          $.post('mail.php', {
+          $.post('mail-test.php', {
                   name: name,
                   email: email,
                   message: message}, function(data){
   data = $.trim(data);
-  
   if (data === 'false'){
       $('#contact-error').removeClass('hidden');
+      console.log("data = false")
   }
   else{
       $('#contact-success').removeClass('hidden');
                   $('#contact-name').val('');
                   $('#contact-email').val('');
                   $('#contact-message').val('');
-      
       setTimeout(function(){
     $('#contact-success').addClass('hidden');
       }, 5000);
   }
     }).fail(function(data){
-              console.log(data);
+              console.log(data + " fail function");
     });
       }
 return false;

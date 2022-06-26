@@ -17,7 +17,9 @@ if(isset($_POST['submit'])) {
  //PHP mailer function
  
   $result1 = mail($mailto, $subject, $message, $headers); // This email sent to My address
- 
+  echo '<script>';
+  echo 'console.log('. json_encode( $result1 ) .')';
+  echo '</script>';
   //Checking if Mails sent successfully
  
   if ($result1) {
