@@ -97,3 +97,20 @@ let imgModal = (src) => {
     };
 modal.append(newImage, closeBtn);
 };
+
+function initMap() {
+  const myLatLng = { lat: 50.9991997473814, lng: 21.823571705687762 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: myLatLng,
+  });
+
+  new google.maps.Marker({
+    position: myLatLng,
+    map,
+    title: "GAZDA",
+  });
+}
+
+window.initMap = initMap;
+
