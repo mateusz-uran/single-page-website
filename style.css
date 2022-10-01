@@ -355,7 +355,7 @@ figure img {
 }
 
 .modal img {
-  width: 80%;
+  width: 50%;
   object-fit: cover;
 }
 
@@ -737,6 +737,11 @@ figure img {
 
   .nav-toggle {
     display: block;
+  }
+
+  .modal img {
+    width: 80%;
+    object-fit: cover;
   }
 }
 
