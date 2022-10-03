@@ -58,10 +58,9 @@ Website is build with HTML, CSS and JavaScript
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Static website can be run everywhere just execute index file.
+Static website can be run everywhere, execute index.html from root folder.
 
 ### Installation
-
 
 1. Unpack project file on your local machine or hosting server. JavaScript scripts will run automatically.
 
