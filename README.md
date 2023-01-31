@@ -71,8 +71,6 @@ Static website can be run everywhere, execute index.html from root folder.
 
 Email - mateusz.uranowski@onet.pl
 
-My personal blog: [https://mateusz-uran.pl/](https://mateusz-uran.pl/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
